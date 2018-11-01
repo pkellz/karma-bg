@@ -1,18 +1,19 @@
 # karma-bg
 
-Change your desktop wallpaper to a random image based off of one keyword.
+Randomize your desktop wallpaper based from one key word.
 Pulls random images from [Unsplash](https://github.com/unsplash) API.
+## So far this is only supported on Ubuntu.
 
 
 ![image](https://pkellz.github.io/pk/random/karma.gif)
 
 
-### install
+### installation
 ```sh
 npm install --global karma-bg
 ```
 
-### use
+### usage
 ```sh
 karma { keyword }
 ```
