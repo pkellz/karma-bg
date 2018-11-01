@@ -8,5 +8,5 @@ fi
 
 response=$(curl -s https://source.unsplash.com/1600x900/?$1)
 bg=$( echo $response | grep -Po "http(s)?://.(?:(?!\").)*" )
-
+# echo $bg
 gsettings set org.gnome.desktop.background picture-uri $bg
