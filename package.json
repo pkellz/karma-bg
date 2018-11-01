@@ -2,10 +2,12 @@
   "name": "karma-bg",
   "version": "1.0.0",
   "description": "Change your desktop wallpaper to a random image based off of one keyword.",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pkellz/karma-bg.git"
+  },
+  "bin":{
+    "karma":"./karma"
   },
   "keywords": [
     "karma-bg",
