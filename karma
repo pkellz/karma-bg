@@ -2,11 +2,11 @@
 
 if [ -z $1 ];
 then
-  echo "No keyword"
+  echo "Must enter a keyword"
   exit
 fi
 
 response=$(curl -s https://source.unsplash.com/1600x900/?$1)
 bg=$( echo $response | grep -Po "http(s)?://.(?:(?!\").)*" )
-# echo $bg
+echo "Background changed"
 gsettings set org.gnome.desktop.background picture-uri $bg
